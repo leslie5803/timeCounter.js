@@ -5,7 +5,7 @@
             || document.querySelector(options.elem)
             || document.querySelector('.' + options.elem),
             isValid = function(str){
-                return /\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}/.test(str);
+                return /^\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}$/.test(str);
             },
             toStamp = function(str){
                 if(!isValid(str)){
